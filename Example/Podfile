@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WOWCardStackView_Example' do
+  pod 'WOWCardStackView', :path => '../'
+
+  target 'WOWCardStackView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
