@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Swapable Card Stack View in Swift 3.0.
+Swapable Card Stack View in Swift 3.0. It's able to use in Storyboard and similar to UITableView.
                        DESC
 
   s.homepage         = 'https://github.com/zhouhao27/WOWCardStackView'  

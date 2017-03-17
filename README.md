@@ -1,11 +1,10 @@
 # WOWCardStackView
 
-Swipable card stack view.
-
-[![CI Status](http://img.shields.io/travis/zhouhao27/WOWCardStackView.svg?style=flat)](https://travis-ci.org/zhouhao27/WOWCardStackView)
 [![Version](https://img.shields.io/cocoapods/v/WOWCardStackView.svg?style=flat)](http://cocoapods.org/pods/WOWCardStackView)
 [![License](https://img.shields.io/cocoapods/l/WOWCardStackView.svg?style=flat)](http://cocoapods.org/pods/WOWCardStackView)
 [![Platform](https://img.shields.io/cocoapods/p/WOWCardStackView.svg?style=flat)](http://cocoapods.org/pods/WOWCardStackView)
+
+Swipable card stack view.
 
 ![alt tag](stack.gif)
 
