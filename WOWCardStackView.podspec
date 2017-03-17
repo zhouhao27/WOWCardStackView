@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WOWCardStackView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Swapable Card Stack View in Swift 3.0.'
 
 # This description is used to generate tags and improve search results.
