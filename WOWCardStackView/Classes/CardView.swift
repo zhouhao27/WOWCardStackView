@@ -20,21 +20,21 @@ open class CardView: UIView {
     weak var delegate: CardViewDelegate?
     
     @IBInspectable
-    var borderColor: UIColor = UIColor.clear {
+    public var borderColor: UIColor = UIColor.clear {
         willSet {
             self.layer.borderColor = newValue.cgColor
         }
     }
     
     @IBInspectable
-    var borderWidth: CGFloat = 0 {
+    public var borderWidth: CGFloat = 0 {
         willSet {
             self.layer.borderWidth = newValue
         }
     }
     
     @IBInspectable
-    var isShadowed: Bool = false {
+    public var isShadowed: Bool = false {
         willSet {
             if newValue {
                 self.layer.shadowColor = UIColor.black.cgColor
