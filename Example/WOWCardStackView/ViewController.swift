@@ -9,7 +9,7 @@
 import UIKit
 import WOWCardStackView
 
-class ViewController: UIViewController, CardStackViewDataSource {
+class ViewController: UIViewController, CardStackViewDataSource, CardStackViewDelegate {
 
     @IBOutlet weak var cardStackView: CardStackView!
     var orderNo: Int = 3
@@ -17,26 +17,49 @@ class ViewController: UIViewController, CardStackViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cardStackView.register(nib: UINib(nibName: "MyCard", bundle: nil))
         cardStackView.dataSource = self
-        cardStackView.reloadData()
+        cardStackView.delegate = self        
     }
 
     func nextCard(in: CardStackView) -> CardView? {
-        let card = cardStackView.dequeueCardView() as! MyCard
-        card.numberLabel.text = "\(orderNo)"
+        let card = createCard(order: orderNo)
         orderNo += 1
         return card
     }
     
     func cardStackView(_ cardStackView: CardStackView, cardAt index: Int) -> CardView {
-        let card = cardStackView.dequeueCardView() as! MyCard
-        card.numberLabel.text = "\(index)"
-        return card
+        return createCard(order: index)
     }
     
     func numOfCardInStackView(_ cardStackView: CardStackView) -> Int {
         return 3
+    }
+    
+    public func cardStackView(_: CardStackView, didSelect card: CardView) {
+        if let card = card as? MyCard {
+            print("Clicked: \(card.id)")
+            
+            if let details = self.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController {
+                details.id = card.id
+                self.navigationController?.pushViewController(details, animated: true)
+            }
+        }
+    }
+    
+    func createCard(order: Int) -> MyCard {
+        let card = MyCard(id: order)
+        card.id = order
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        label.font = UIFont(name: "Arial", size: 28)
+        label.text = "\(order)"
+        label.textAlignment = .center
+        label.textColor = UIColor.white
+        card.addSubview(label)
+        card.backgroundColor = UIColor.red
+        card.borderWidth = 1.0
+        card.borderColor = UIColor.lightGray
+        card.isShadowed = true
+        return card
     }
 
 }

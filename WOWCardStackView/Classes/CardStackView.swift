@@ -14,15 +14,21 @@ public protocol CardStackViewDataSource: class {
     func numOfCardInStackView(_ cardStackView: CardStackView) -> Int
 }
 
-public protocol CardStackDelegate: class {
-    func cardStackView(_: CardStackView, didSelectCardAt: Int)
+public protocol CardStackViewDelegate: class {
+    func cardStackView(_: CardStackView, didSelect card: CardView)
 }
 
 @IBDesignable
 public class CardStackView: UIView, CardViewDelegate {
 
     // MARK: - Properties
-    public weak var dataSource: CardStackViewDataSource?   // TODO: add to dataSource in Inspector
+    public weak var dataSource: CardStackViewDataSource? { // TODO: add to dataSource in Inspector
+        didSet {
+            reloadData()
+        }
+    }
+    
+    public weak var delegate: CardStackViewDelegate?
     
     // MARK: - Private properties
     private var nib : UINib?
@@ -40,16 +46,6 @@ public class CardStackView: UIView, CardViewDelegate {
         didSet {
             layoutIfNeeded()
         }
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
     }
     
     // MARK: - Public methods
@@ -98,6 +94,10 @@ public class CardStackView: UIView, CardViewDelegate {
         }
     }
     
+    public func cardViewDidSelected(_ cardView: CardView) {
+        self.delegate?.cardStackView(self, didSelect: cardView)
+    }
+    
     // MARK: - Override
     override open func layoutSubviews() {
         // setup cards frame
@@ -113,9 +113,6 @@ public class CardStackView: UIView, CardViewDelegate {
     }
     
     // MARK: - Private methods
-    func setup() {
-    }
-
     private func rectAt(index: Int) -> CGRect {
         
         if let dataSource = dataSource {

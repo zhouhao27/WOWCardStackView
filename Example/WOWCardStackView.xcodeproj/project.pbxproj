@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386177201E7BBF68006F4F5E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861771F1E7BBF68006F4F5E /* DetailsViewController.swift */; };
+		386177221E7BC2DD006F4F5E /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 386177211E7BC2DD006F4F5E /* placeholder.jpg */; };
 		38F5CE7A1E7B881700A7FCA0 /* MyCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F5CE791E7B881700A7FCA0 /* MyCard.xib */; };
 		38F5CE7C1E7B8A1600A7FCA0 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5CE7B1E7B8A1600A7FCA0 /* MyCard.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -34,6 +36,8 @@
 		0C60282BA410B7570717C313 /* Pods-WOWCardStackView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOWCardStackView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WOWCardStackView_Tests/Pods-WOWCardStackView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		22BB6C624B682C38943B9C46 /* Pods_WOWCardStackView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOWCardStackView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30091B23E72D1AB9E49886BF /* Pods-WOWCardStackView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOWCardStackView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOWCardStackView_Example/Pods-WOWCardStackView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3861771F1E7BBF68006F4F5E /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		386177211E7BC2DD006F4F5E /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		38F5CE791E7B881700A7FCA0 /* MyCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCard.xib; sourceTree = "<group>"; };
 		38F5CE7B1E7B8A1600A7FCA0 /* MyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 		5D57B462CADD95BAA877731F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		607FACD21AFB9204008FA782 /* Example for WOWCardStackView */ = {
 			isa = PBXGroup;
 			children = (
+				386177211E7BC2DD006F4F5E /* placeholder.jpg */,
 				38F5CE7B1E7B8A1600A7FCA0 /* MyCard.swift */,
 				38F5CE791E7B881700A7FCA0 /* MyCard.xib */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -116,6 +121,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				3861771F1E7BBF68006F4F5E /* DetailsViewController.swift */,
 			);
 			name = "Example for WOWCardStackView";
 			path = WOWCardStackView;
@@ -257,6 +263,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				386177221E7BC2DD006F4F5E /* placeholder.jpg in Resources */,
 				38F5CE7A1E7B881700A7FCA0 /* MyCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +378,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				38F5CE7C1E7B8A1600A7FCA0 /* MyCard.swift in Sources */,
+				386177201E7BBF68006F4F5E /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

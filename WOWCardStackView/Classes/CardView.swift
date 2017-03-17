@@ -10,12 +10,14 @@ import UIKit
 
 public protocol CardViewDelegate: class {
     func shouldRemoveCardView(_ cardView: CardView)
+    func cardViewDidSelected(_ cardView: CardView)
 }
 
 @IBDesignable
 open class CardView: UIView {
     
     private var originCenter: CGPoint!
+    private var dragged: Bool = false
 
     weak var delegate: CardViewDelegate?
     
@@ -45,10 +47,11 @@ open class CardView: UIView {
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
@@ -58,13 +61,26 @@ open class CardView: UIView {
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(drag(gesture:)))
         self.addGestureRecognizer(gesture)
     }
-    
+
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         
         originCenter = self.center
+        dragged = false
     }
 
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        
+        guard isTopMost() else {
+            return
+        }
+
+        if !dragged {
+            self.delegate?.cardViewDidSelected(self)
+        }
+    }
+    
     func drag(gesture: UIPanGestureRecognizer) {
         
         guard isTopMost() else {
@@ -96,9 +112,10 @@ open class CardView: UIView {
             return
         }
         
+        dragged = true
         self.center = CGPoint(x: originCenter.x + translation.x, y: originCenter.y + translation.y)
     }
-    
+ 
     //MARK: - Private
     func isTopMost() -> Bool {
         return self.superview?.subviews.last == self

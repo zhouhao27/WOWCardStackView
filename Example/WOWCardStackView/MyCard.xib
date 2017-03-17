@@ -12,11 +12,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCard" customModule="WOWCardStackView_Example" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyCard" customModule="WOWCardStackView_Example" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngz-wL-ZLy">
-                    <rect key="frame" x="166.5" y="90" width="42" height="21"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fkF-YI-OSe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="DXe-0C-9LA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j4-eA-66Y">
+                    <rect key="frame" x="6" y="259" width="88" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jXL-Pv-tZY"/>
+                        <constraint firstAttribute="width" constant="88" id="jkG-49-l0l"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -24,8 +34,12 @@
             </subviews>
             <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="Ngz-wL-ZLy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RAH-Ae-Ysf"/>
-                <constraint firstItem="Ngz-wL-ZLy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UZy-M5-sUv"/>
+                <constraint firstItem="6j4-eA-66Y" firstAttribute="top" secondItem="fkF-YI-OSe" secondAttribute="bottom" constant="19" id="3nC-By-N8r"/>
+                <constraint firstItem="6j4-eA-66Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="DcU-rP-W87"/>
+                <constraint firstAttribute="trailing" secondItem="fkF-YI-OSe" secondAttribute="trailing" id="LQx-Vu-0GK"/>
+                <constraint firstItem="fkF-YI-OSe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T8D-d6-9Cp"/>
+                <constraint firstItem="fkF-YI-OSe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lH3-DK-Mdo"/>
+                <constraint firstAttribute="bottom" secondItem="6j4-eA-66Y" secondAttribute="bottom" constant="20" id="sMK-YU-WGE"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -39,8 +53,12 @@
                 <userDefinedRuntimeAttribute type="boolean" keyPath="isShadowed" value="YES"/>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="numberLabel" destination="Ngz-wL-ZLy" id="v1t-RG-0c1"/>
+                <outlet property="numberLabel" destination="6j4-eA-66Y" id="aSN-ey-bcs"/>
             </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
         </view>
     </objects>
+    <resources>
+        <image name="placeholder.jpg" width="1280" height="800"/>
+    </resources>
 </document>

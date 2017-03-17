@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="op4-yf-pKr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDK-WX-GHa" customClass="CardStackView" customModule="WOWCardStackView">
-                                <rect key="frame" x="16" y="46" width="343" height="240"/>
+                                <rect key="frame" x="16" y="90" width="343" height="160"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="fAk-FB-6sw"/>
+                                    <constraint firstAttribute="height" constant="160" id="fAk-FB-6sw"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="offsetY">
@@ -45,11 +45,74 @@
                             <constraint firstItem="dDK-WX-GHa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="qEt-xJ-I2T"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qIW-yo-dKi"/>
                     <connections>
                         <outlet property="cardStackView" destination="dDK-WX-GHa" id="JNs-fP-TUY"/>
+                        <segue destination="mHi-HE-Qju" kind="show" identifier="ShowDetails" id="gPK-Ia-wKS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="TFS-vb-h7A">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" id="mHi-HE-Qju" customClass="DetailsViewController" customModule="WOWCardStackView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Byb-Zc-DtF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kf6-Tq-1eM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NM4-L1-Iov">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CL8-c8-W96" customClass="CardStackView" customModule="WOWCardStackView">
+                                <rect key="frame" x="16" y="84" width="343" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="T33-cE-T53"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="offsetY">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleFactor">
+                                        <real key="value" value="0.98999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CL8-c8-W96" firstAttribute="top" secondItem="Byb-Zc-DtF" secondAttribute="bottom" constant="20" id="LNe-1e-FDN"/>
+                            <constraint firstItem="CL8-c8-W96" firstAttribute="leading" secondItem="NM4-L1-Iov" secondAttribute="leadingMargin" id="VX7-v2-UKN"/>
+                            <constraint firstItem="CL8-c8-W96" firstAttribute="trailing" secondItem="NM4-L1-Iov" secondAttribute="trailingMargin" id="sVp-RI-2OM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardStackView" destination="CL8-c8-W96" id="wly-Hz-2Be"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZP-uD-Gf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892" y="131.78410794602701"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IJB-WP-ss1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="op4-yf-pKr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QaB-pn-J39">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UTh-1x-FVi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCu-VV-fi7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
