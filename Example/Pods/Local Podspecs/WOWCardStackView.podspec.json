@@ -1,0 +1,22 @@
+{
+  "name": "WOWCardStackView",
+  "version": "0.1.0",
+  "summary": "A short description of WOWCardStackView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhouhao27/WOWCardStackView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhouhao27": "zhou.hao.27@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/zhouhao27/WOWCardStackView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WOWCardStackView/Classes/**/*"
+}

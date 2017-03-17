@@ -1,0 +1,16 @@
+PODS:
+  - WOWCardStackView (0.1.0)
+
+DEPENDENCIES:
+  - WOWCardStackView (from `../`)
+
+EXTERNAL SOURCES:
+  WOWCardStackView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WOWCardStackView: c61693f1a89a9efe98803f444bd3ba04800551c2
+
+PODFILE CHECKSUM: b9dc39536f94480e8cd28db0da0997b3e63ec66c
+
+COCOAPODS: 1.2.0.beta.1

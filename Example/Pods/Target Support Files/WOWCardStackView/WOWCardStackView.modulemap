@@ -1,0 +1,6 @@
+framework module WOWCardStackView {
+  umbrella header "WOWCardStackView-umbrella.h"
+
+  export *
+  module * { export * }
+}
