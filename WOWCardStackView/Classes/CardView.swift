@@ -3,6 +3,7 @@
 //  CardStack
 //
 //  Created by Zhou Hao on 11/3/17.
+//  Modified by Devzhr on 27/5/20.
 //  Copyright © 2017 Zhou Hao. All rights reserved.
 //
 
@@ -81,7 +82,7 @@ open class CardView: UIView {
         }
     }
     
-    func drag(gesture: UIPanGestureRecognizer) {
+    @objc func drag(gesture: UIPanGestureRecognizer) {
         
         guard isTopMost() else {
             return
