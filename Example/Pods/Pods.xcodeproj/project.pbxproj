@@ -33,14 +33,14 @@
 /* Begin PBXFileReference section */
 		05B7EC1E7DC486E38E5E5BC54A0CF76B /* Pods-WOWCardStackView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WOWCardStackView_Example-dummy.m"; sourceTree = "<group>"; };
 		1466140EA31C31051C9BDEFA00AE8207 /* Pods-WOWCardStackView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WOWCardStackView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		14ABDE3992BE2202BD86EC2B025F4B1A /* WOWCardStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WOWCardStackView.modulemap; sourceTree = "<group>"; };
+		14ABDE3992BE2202BD86EC2B025F4B1A /* WOWCardStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WOWCardStackView.modulemap; sourceTree = "<group>"; };
 		1C13F73529648A056FFCD20C57127D52 /* Pods-WOWCardStackView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WOWCardStackView_Example-resources.sh"; sourceTree = "<group>"; };
 		22A2FF2B033BD6636C204D7687A17DD3 /* Pods-WOWCardStackView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WOWCardStackView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		26DDDE7D77AC66EB40444B1BFD83C4F8 /* Pods-WOWCardStackView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WOWCardStackView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2D53ADE759A4A25C7C6E95AA9BFC73BF /* Pods-WOWCardStackView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WOWCardStackView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		2E24D25CD24FDC3F755891A58E14E385 /* CardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		3984ECC5DE65F8D45936099DEF0BD59F /* Pods_WOWCardStackView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WOWCardStackView_Example.framework; path = "Pods-WOWCardStackView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E2FC208A1B7AB5ED0584268710E136C /* Pods-WOWCardStackView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WOWCardStackView_Tests.modulemap"; sourceTree = "<group>"; };
+		3984ECC5DE65F8D45936099DEF0BD59F /* Pods_WOWCardStackView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOWCardStackView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2FC208A1B7AB5ED0584268710E136C /* Pods-WOWCardStackView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WOWCardStackView_Tests.modulemap"; sourceTree = "<group>"; };
 		5421DB4C1F767329B77186567225347B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5702ABE1DE17D25451054AD7494A1EA6 /* Pods-WOWCardStackView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WOWCardStackView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5DA924C3D3AB63911AE5C683DBABB284 /* CardStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
@@ -48,10 +48,10 @@
 		66318BC0BD11694BB4891658120C0763 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AE3A655CDF011C2B83B924C5832A135 /* Pods-WOWCardStackView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WOWCardStackView_Tests-dummy.m"; sourceTree = "<group>"; };
 		6B9E9ABE17CD9126708A8FA25B7BDF80 /* Pods-WOWCardStackView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WOWCardStackView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7B121A0973934159B4D64EF067115CCA /* WOWCardStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WOWCardStackView.framework; path = WOWCardStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B121A0973934159B4D64EF067115CCA /* WOWCardStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WOWCardStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8795E19C4A5D1398D7D3B1480EAD4197 /* Pods-WOWCardStackView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WOWCardStackView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C49A1401259FF3131219EC842D59DDC /* Pods-WOWCardStackView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WOWCardStackView_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8C49A1401259FF3131219EC842D59DDC /* Pods-WOWCardStackView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WOWCardStackView_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A11B87663AD00B131AEFE4ED4189A40B /* Pods-WOWCardStackView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WOWCardStackView_Example-umbrella.h"; sourceTree = "<group>"; };
 		A9918CD32DEA851FACC06D046DA4861E /* WOWCardStackView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WOWCardStackView-umbrella.h"; sourceTree = "<group>"; };
 		B46C793E83EFF12808A2F298DE2A11F2 /* WOWCardStackView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WOWCardStackView.xcconfig; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		CD75DCE63977C88932740016A93012B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2DF5BBDAB1BEFC4C179D1A7FA88AA80 /* WOWCardStackView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WOWCardStackView-dummy.m"; sourceTree = "<group>"; };
 		DD297BA9053D8DBA06D12A32AE210383 /* Pods-WOWCardStackView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WOWCardStackView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F7B49BAFAF226EF6A8BE9D68425474E7 /* Pods_WOWCardStackView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WOWCardStackView_Tests.framework; path = "Pods-WOWCardStackView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B49BAFAF226EF6A8BE9D68425474E7 /* Pods_WOWCardStackView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOWCardStackView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,6 @@
 			children = (
 				C4B6FE0B0DB7022D89F1D92185745580 /* Classes */,
 			);
-			name = WOWCardStackView;
 			path = WOWCardStackView;
 			sourceTree = "<group>";
 		};
@@ -213,7 +212,6 @@
 				5DA924C3D3AB63911AE5C683DBABB284 /* CardStackView.swift */,
 				2E24D25CD24FDC3F755891A58E14E385 /* CardView.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -317,12 +315,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					9D74027CA3A8C170AD5F9D546BD76991 = {
+						LastSwiftMigration = 1150;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -402,7 +406,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -624,7 +628,7 @@
 				PRODUCT_NAME = WOWCardStackView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
